@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Arrays;
 
 class Candidate implements Comparable<Candidate> {
@@ -80,10 +81,40 @@ class Candidate implements Comparable<Candidate> {
     }
 }
 
+=======
+class Student {
+
+    // Instance fields
+    String name;
+    int attendance;
+
+    // Static fields - shared by all students
+    static String collegeName = "SRM Institute of Science and Technology";
+    static int studentCount = 0;
+
+    // Constructor
+    public Student(String name, int attendance) {
+        this.name = name;
+        this.attendance = attendance;
+
+        // Increment student count
+        studentCount++;
+    }
+
+    // Static method
+    public static void printCollegeInfo() {
+        System.out.println(collegeName);
+        System.out.println("Students created: " + studentCount);
+    }
+}
+
+
+>>>>>>> c0eef5d7687aa3bbed511b71bf9f17b11c8456ba
 public class problem5 {
 
     public static void main(String[] args) {
 
+<<<<<<< HEAD
         Candidate[] candidates = {
             new Candidate("Aisha", 8.2, 40),
             new Candidate("Rohit", 6.8, 65),
@@ -96,3 +127,14 @@ public class problem5 {
         );
     }
 }
+=======
+        // Create two Student objects
+        Student student1 = new Student("Ravi", 90);
+        Student student2 = new Student("Anu", 95);
+
+        // Call static method using class name
+        Student.printCollegeInfo();
+    }
+}
+
+>>>>>>> c0eef5d7687aa3bbed511b71bf9f17b11c8456ba
